@@ -1,6 +1,6 @@
 {
   "homepage": "http://oanik.github.io/currency",
-  "name": "my-app",
+  "name": "currency",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
