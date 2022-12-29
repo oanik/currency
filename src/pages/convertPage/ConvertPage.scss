@@ -1,0 +1,50 @@
+@import "../../styles/pages";
+@import "../../styles/colors";
+@import "../../styles/fonts";
+@import "../../styles/theme";
+
+.currenciesPageContainer {
+  @include currency-page-wrapper;
+}
+
+.convertContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 25%;
+}
+
+.inputContainer:nth-child(1) {
+  margin-right: 0.5em;
+}
+
+.convertInput {
+  height: 38px;
+  padding: 0 0.4em;
+  font-size: $basicFonts;
+  border: 2px solid $lightGreyColor;
+
+  @include themed() {
+    color: t("text");
+    background: t("bg");
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $greyColor;
+  }
+  
+}
+
+.disabledOutline {
+  pointer-events: none;
+}
+
+.label {
+  margin-bottom: 0.2em;
+}

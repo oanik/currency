@@ -1,0 +1,8 @@
+$basicFonts: 1rem;
+
+@mixin nav-fonts {
+  font-weight: 400;
+  font-size: $basicFonts;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}

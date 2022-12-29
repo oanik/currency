@@ -1,0 +1,13 @@
+@import "../../styles/pages";
+
+.currenciesPageContainer {
+  @include currency-page-wrapper;
+  height: 100%;
+  overflow: hidden;
+}
+
+.currenciesSearchWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

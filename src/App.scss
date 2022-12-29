@@ -1,0 +1,34 @@
+@import "./styles/colors";
+@import "./styles/spacing";
+@import "./styles/theme";
+@import "./styles/fonts";
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-size: $basicFonts;
+  font-weight: bold;
+  transition: all 0.5s;
+
+  @include themed() {
+    color: t("text");
+    background: t("bg");
+  }
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $greyColor;
+}
+
+.pagesContainer {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - $headerHeight);
+  max-width: 100vw;
+  overflow: hidden;
+  margin-bottom: 12px;
+}

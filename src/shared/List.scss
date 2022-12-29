@@ -1,0 +1,15 @@
+@import "../styles/colors";
+
+.listStyle {
+  display: flex;
+  flex-grow: 1;
+  max-height: 600px;
+}
+
+.rowStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 1em;
+  border: 2px solid $lightGreyColor;
+}
