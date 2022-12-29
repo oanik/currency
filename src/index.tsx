@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-    <Router>
+    <Router basename='/currency'>
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <App />
