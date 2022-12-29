@@ -1,10 +1,12 @@
 import React, { useMemo } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import { Routing } from "../../constants/routes";
 import { AllCurrenciesPage } from "../../pages/AllCurrenciesPage";
 import { MyCurrenciesPage } from "../../pages/MyCurrenciesPage";
 import ConvertPage from "../../pages/convertPage";
+
+const NavigateTo: React.FC = () => <Navigate to="/" replace />;
 
 export const RoutingPanel: React.FC = () => {
   const routes = useMemo(() => {
@@ -23,7 +25,7 @@ export const RoutingPanel: React.FC = () => {
       },
       {
         path: "*",
-        panel: AllCurrenciesPage,
+        panel: NavigateTo
       },
     ];
   }, []);
