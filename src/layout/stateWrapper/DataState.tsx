@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from "react";
 import { styled } from "@mui/material/styles";
 
 const StateWrapper = styled("div")(() => ({
@@ -19,7 +19,7 @@ const DataStateComponent: React.FC<DataStateComponentProps> = ({
 }) => {
   return (
     <StateWrapper>
-      <h3 style={{marginRight: "0.2em"}}>{text}</h3>
+      <h3 style={{ marginRight: "0.2em" }}>{text}</h3>
       {component}
     </StateWrapper>
   );

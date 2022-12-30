@@ -12,7 +12,7 @@ import {
   CellMeasurerCache,
 } from "react-virtualized";
 
-import { CurrencyItem } from '../interfaces';
+import { CurrencyItem } from "../interfaces";
 import "./List.scss";
 
 const List = _List as unknown as React.FC<ListProps>;

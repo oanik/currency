@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useLocalStorage } from '../hooks/useLocalStorage';
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import ThemeContext, { initialThemeState } from "./ThemeContext";
 
 const ThemeProvider: React.FC = ({ children }) => {

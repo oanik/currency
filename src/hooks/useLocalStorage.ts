@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 export function useLocalStorage(key: string, initialValue) {
   const [storedValue, setStoredValue] = useState(() => {
     if (typeof window === "undefined") {
@@ -11,6 +12,7 @@ export function useLocalStorage(key: string, initialValue) {
       return initialValue;
     }
   });
+  
   const setValue = (value) => {
     try {
       const valueToStore =
@@ -23,5 +25,6 @@ export function useLocalStorage(key: string, initialValue) {
       console.log(error);
     }
   };
+
   return [storedValue, setValue];
 }

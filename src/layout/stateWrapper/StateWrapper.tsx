@@ -1,10 +1,10 @@
 import React from "react";
-import PetsTwoToneIcon from '@mui/icons-material/PetsTwoTone';
-import ManageSearchSharpIcon from '@mui/icons-material/ManageSearchSharp';
+import PetsTwoToneIcon from "@mui/icons-material/PetsTwoTone";
+import ManageSearchSharpIcon from "@mui/icons-material/ManageSearchSharp";
 import { styled } from "@mui/material/styles";
 
 import { useAppSelector } from "../../redux/hooks";
-import CircularProgressBar from './CircularProgress';
+import CircularProgressBar from "./CircularProgress";
 import DataState from "./DataState";
 
 const IconWrapper = styled("div")(() => ({
@@ -22,7 +22,7 @@ export const StateWrapper: React.FC = ({ children }) => {
       <>
         <PetsTwoToneIcon fontSize="medium" color="inherit" />
         <IconWrapper>
-          <PetsTwoToneIcon fontSize="medium" color="inherit"/>
+          <PetsTwoToneIcon fontSize="medium" color="inherit" />
         </IconWrapper>
       </>
     )
