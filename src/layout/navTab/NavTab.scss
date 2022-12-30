@@ -1,0 +1,23 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.navPanel {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  z-index: 10;
+
+  @include nav-fonts;
+}
+
+.navLink {
+  margin-right: 0.5em;
+}
+
+a {
+  color: $whiteTextColor;
+
+  &:visited {
+    color: $whiteTextColor;
+  }
+}

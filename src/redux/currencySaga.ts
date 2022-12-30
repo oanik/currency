@@ -32,6 +32,7 @@ export function* handleGetCurrencies(): Generator {
       favoriteCurrenciesList,
       allCurrencies
     )) as CurrencyItem[];
+
     yield put(setCurrencies(updatedData));
   } catch (err) {
     yield put(setCurrenciesLoadError("Error"));
