@@ -27,8 +27,8 @@
 .pagesContainer {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - $headerHeight);
   max-width: 100vw;
+  height: calc(100vh - $headerHeight);
   overflow: hidden;
   margin-bottom: 12px;
 }

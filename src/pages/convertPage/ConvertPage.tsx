@@ -72,7 +72,7 @@ export const ConvertPage: React.FC = () => {
     return () => {
       setCurrencyToConvert("");
     };
-  }, []);
+  }, [id]);
 
   return (
     <div className="currenciesPageContainer">

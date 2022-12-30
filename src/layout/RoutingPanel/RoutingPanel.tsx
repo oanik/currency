@@ -6,15 +6,10 @@ import { AllCurrenciesPage } from "../../pages/AllCurrenciesPage";
 import { MyCurrenciesPage } from "../../pages/MyCurrenciesPage";
 import ConvertPage from "../../pages/convertPage";
 
-const NavigateTo: React.FC = () => <Navigate to="/" replace />;
-
 export const RoutingPanel: React.FC = () => {
+  const NavigateTo: React.FC = () => <Navigate to="/" replace />;
   const routes = useMemo(() => {
     return [
-      {
-        path: Routing.Base,
-        panel: AllCurrenciesPage,
-      },
       {
         path: `${Routing.MyCurrencies}/:id`,
         panel: ConvertPage,
@@ -22,6 +17,10 @@ export const RoutingPanel: React.FC = () => {
       {
         path: Routing.MyCurrencies,
         panel: MyCurrenciesPage,
+      },
+      {
+        path: Routing.Base,
+        panel: AllCurrenciesPage,
       },
       {
         path: "*",

@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import storage from "redux-persist/lib/storage";
 
 import { CurrencyItem } from "../interfaces";
 import { RootState } from "./configureStore";

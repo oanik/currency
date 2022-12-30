@@ -49,7 +49,7 @@ type SearchInputProps = {
 };
 
 const SearchInput: React.FC<SearchInputProps> = ({
-  value = "",
+  value,
   placeholder = "",
   onChange,
 }) => {
